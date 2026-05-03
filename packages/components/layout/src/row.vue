@@ -17,12 +17,3 @@ defineProps({
   },
 });
 </script>
-
-<style>
-.g-row {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: var(--g-row-gap);
-}
-</style>

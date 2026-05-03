@@ -1,18 +1,16 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "target": "es2016",
-        "sourceMap": false,
-        "module": "esnext",
-        "esModuleInterop": true,
-        "resolveJsonModule": true,
-        "strict": true,
-        "jsx": "preserve",
-        "lib": [
-            "esnext",
-            "dom"
-        ],
-        "rootDir": ".",
-        "moduleResolution": "node"
-    }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "target": "es2016",
+    "sourceMap": false,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "rootDir": ".",
+    "moduleResolution": "node"
+  }
 }
