@@ -1,6 +1,6 @@
 {
   "name": "@gausszhou/ui-vue-components",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A Vue 3 UI component library",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.mjs",
@@ -27,9 +27,6 @@
   "packageManager": "pnpm@10.6.2",
   "peerDependencies": {
     "vue": "^3.5.13"
-  },
-  "dependencies": {
-    "@gausszhou/ui-vue-theme-chalk": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
