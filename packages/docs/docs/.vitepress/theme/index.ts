@@ -1,12 +1,10 @@
 import DefaultTheme from 'vitepress/theme';
-import '@gui-vue/theme-chalk/src/index.scss';
-import GUI from '@gui-vue/components';
+import GUI from '@gausszhou/ui-vue-components';
+import '@gausszhou/ui-vue-theme-chalk';
+
 export default {
   ...DefaultTheme,
-  // Layout,
   enhanceApp: async ({ app, router, siteData }) => {
-    // app is the Vue 3 app instance from `createApp()`. router is VitePress'
-    // custom router. `siteData`` is a `ref`` of current site-level metadata.
     app.use(GUI);
   }
 };

@@ -1,15 +1,26 @@
 {
-  "name": "gui-vue",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "packageManager": "pnpm@10.33.2",
+  "workspaces": [
+    "packages/*",
+    "play"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "pnpm --filter @gui-vue/docs run docs:dev",
-    "docs:build": "pnpm --filter @gui-vue/docs run docs:build"
+    "build:theme": "pnpm --filter @gausszhou/ui-vue-theme-chalk build",
+    "build:components": "pnpm --filter @gausszhou/ui-vue-components build",
+    "build": "pnpm build:theme && pnpm i && pnpm build:components",
+    "docs:dev": "pnpm build && pnpm i && pnpm --filter @gausszhou/ui-vue-docs docs:dev",
+    "docs:build": "pnpm build && pnpm i && pnpm --filter @gausszhou/ui-vue-docs docs:build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.6.2"
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.2",
+    "@commitlint/config-conventional": "^20.5.0"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json,scss}": [
+      "eslint --fix --concurrency=auto",
+      "prettier --write --experimental-cli"
+    ]
+  }
 }

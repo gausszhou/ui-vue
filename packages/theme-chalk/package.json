@@ -1,13 +1,29 @@
 {
-  "name": "@gui-vue/theme-chalk",
+  "name": "@gausszhou/ui-vue-theme-chalk",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "SCSS theme for gui-vue components",
+  "main": "./dist/index.css",
+  "module": "./dist/index.css",
+  "exports": {
+    ".": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
   },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "sass src/index.scss dist/index.css --style=compressed"
+  },
+  "keywords": [
+    "scss",
+    "theme"
+  ],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.6.2"
+  "packageManager": "pnpm@10.6.2",
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
 }
