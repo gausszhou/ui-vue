@@ -1,6 +1,6 @@
 {
   "name": "@gausszhou/ui-vue-icons",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Icon fonts and styles for g-vue components",
   "main": "./dist/index.css",
   "module": "./dist/index.css",
@@ -14,7 +14,7 @@
     "icons.d.ts"
   ],
   "scripts": {
-    "build": "sass src/index.scss dist/index.css --style=compressed"
+    "build": "postcss src/index.scss -o dist/index.css"
   },
   "keywords": [
     "icons",
@@ -24,6 +24,10 @@
   "license": "ISC",
   "packageManager": "pnpm@10.6.2",
   "devDependencies": {
-    "sass": "^1.99.0"
+    "cssnano": "^7.1.8",
+    "postcss": "^8.5.13",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "postcss-url": "^10.1.3"
   }
 }
