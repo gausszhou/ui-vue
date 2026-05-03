@@ -7,9 +7,10 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:icons": "pnpm --filter @gausszhou/ui-vue-icons build",
     "build:theme": "pnpm --filter @gausszhou/ui-vue-theme-chalk build",
     "build:components": "pnpm --filter @gausszhou/ui-vue-components build",
-    "build": "pnpm build:theme && pnpm i && pnpm build:components",
+    "build": "pnpm build:icons && pnpm build:theme && pnpm i && pnpm build:components",
     "docs:dev": "pnpm build && pnpm i && pnpm --filter @gausszhou/ui-vue-docs docs:dev",
     "docs:build": "pnpm build && pnpm i && pnpm --filter @gausszhou/ui-vue-docs docs:build"
   },
