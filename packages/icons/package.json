@@ -1,24 +1,24 @@
 {
-  "name": "@gausszhou/ui-vue-theme-chalk",
-  "version": "1.0.0-beta.3",
-  "description": "SCSS theme for gui-vue components",
+  "name": "@gausszhou/ui-vue-icons",
+  "version": "1.0.0-beta.1",
+  "description": "Icon fonts and styles for g-vue components",
   "main": "./dist/index.css",
   "module": "./dist/index.css",
   "exports": {
-    "types": "./theme-chalk.d.ts",
+    "types": "./icons.d.ts",
     "import": "./dist/index.css",
     "require": "./dist/index.css"
   },
   "files": [
     "dist",
-    "theme-chalk.d.ts"
+    "icons.d.ts"
   ],
   "scripts": {
     "build": "sass src/index.scss dist/index.css --style=compressed"
   },
   "keywords": [
-    "scss",
-    "theme"
+    "icons",
+    "fonts"
   ],
   "author": "",
   "license": "ISC",

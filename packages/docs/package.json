@@ -14,6 +14,7 @@
   "dependencies": {
     "@gausszhou/ui-vue-components": "workspace:*",
     "@gausszhou/ui-vue-theme-chalk": "workspace:*",
+    "@gausszhou/ui-vue-icons": "workspace:*",
     "vitepress": "^1.6.3"
   },
   "devDependencies": {

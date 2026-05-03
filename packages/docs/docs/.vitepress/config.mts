@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "GUI Vue",
+  title: "UI Vue",
   description: "Build my own UI component library",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

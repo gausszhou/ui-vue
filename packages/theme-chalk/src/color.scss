@@ -1,18 +1,18 @@
 :root {
   --g-color-white: #fff;
   --g-color-black: #000;
-  --g-color-primary: #409eff;
-  --g-color-success: #67c23a;
-  --g-color-warning: #e6a23c;
-  --g-color-danger: #f56c6c;
-  --g-color-info: #909399;
+  --g-color-blue: #409eff;
+  --g-color-green: #67c23a;
+  --g-color-yellow: #e6a23c;
+  --g-color-red: #f56c6c;
+  --g-color-gray: #909399;
 
   --g-color-primary-text: #303133;
 
   --g-button-text: var(--g-color-white);
-  --g-button-primary: var(--g-color-primary);
-  --g-button-success: var(--g-color-success);
-  --g-button-warning: var(--g-color-warning);
-  --g-button-danger: var(--g-color-danger);
-  --g-button-info: var(--g-color-info);
+  --g-button-primary: var(--g-color-blue);
+  --g-button-success: var(--g-color-green);
+  --g-button-warning: var(--g-color-red);
+  --g-button-danger: var(--g-color-red);
+  --g-button-info: var(--g-color-gray);
 }

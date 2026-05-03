@@ -1,7 +1,10 @@
 # Layout 布局
 
 <script setup>
-import Basic from './basic.vue';
+import ExampleBasic from './basic.vue';
+import ExampleBasicCode from './basic.vue?raw';
+import ExampleResponsive from './responsive.vue'
+import ExampleResponsiveCode from './responsive.vue?raw'
 </script>
 
 栅格布局。
@@ -10,36 +13,28 @@ import Basic from './basic.vue';
 
 使用 `Row` 组件来创建行，`Col` 组件来创建列。
 
-<Basic/>
+<ExampleBasic/>
 
 <details>
 <summary>查看代码</summary>
+<pre>
+  <code>
+{{ ExampleBasicCode }}
+  </code>
+</pre>
+</details>
 
-```vue
-<template>
-  <div class="example">
-    <g-row :gap="10">
-      <g-col v-for="(item, index) in items" :key="index" :span="item">
-        <div class="g-box">
-          {{ item }}
-        </div>
-      </g-col>
-    </g-row>
-  </div>
-</template>
+## 响应式
 
-<script lang="ts" setup>
-const items = [12, 6, 6, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2];
-</script>
+使用 `xl` `lg` `md` `sm` `xs` 等属性来控制 `Col` 在不同页面宽度下占的份数
 
-<style lang="scss">
-.example {
-  .g-box {
-    padding: 12px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-  }
-}
-</style>
-```
+<ExampleResponsive />
+
+<details>
+<summary>查看代码</summary>
+<pre>
+  <code>
+{{ ExampleResponsiveCode }}
+  </code>
+</pre>
 </details>
