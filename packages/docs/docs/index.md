@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: GUI Vue
+  name: UI Vue
   text: Build my own UI component library
   tagline: Go Go Go
   actions:
