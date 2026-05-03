@@ -1,6 +1,6 @@
 {
   "name": "@gausszhou/ui-vue-theme-chalk",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "SCSS theme for gui-vue components",
   "main": "./dist/index.css",
   "module": "./dist/index.css",
